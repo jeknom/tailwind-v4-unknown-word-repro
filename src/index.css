@@ -1,0 +1,28 @@
+
+@import "tailwindcss";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme {
+  --font-sans: 'sigmar';
+  --font-serif: 'sigmar';
+  --font-mono: 'sigmar';
+}
+
+@font-face {
+	font-family: 'sigmar';
+	src: local('sigmar') url('./assets/Sigmar-Regular.ttf') format('truetype');
+}
+
+html {
+  height: 100vh;
+	overflow-y: auto;
+}
+
+ul li ul,
+ul li ol,
+ol li ul,
+ol li ol {
+	padding-left: 1rem;
+	padding-right: 1rem;
+}
